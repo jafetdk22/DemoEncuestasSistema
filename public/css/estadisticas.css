@@ -1,0 +1,464 @@
+html {
+    font-size: 100%; /* 100% = 16px */
+  }
+  body{
+    overflow: hidden;
+  }
+.navi{
+    width: 100%;
+    display: flex;
+    justify-content:space-between;
+}
+.botones{
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+    justify-content: center;
+}
+.EncuestaName{
+    width: 40vw;
+    height: 4vh;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #2E4053;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.btne:hover{
+    background-color: #3F84CD;
+    color: #ffff;
+}
+.cajaNo{
+    width: 25vw;
+    padding:0;
+    border-radius:5px;
+    margin: 10px;
+    border:1px solid rgb(210, 210, 210);
+}
+.col-header{
+    border-radius: 5px 5px 0px 2px / 2px 2px 0px 0px;
+    padding: 5px;
+}
+.col-body{
+    padding: 15px;
+}
+.bg-dangy{
+    background-color: #992727;
+    color: #ffff;
+}
+/*selects de vista asesores*/
+.selectsNav{
+    max-width: 50vw;
+    min-width: 20vw;
+    max-height: 4vh;
+    top:10vh;
+    display: flex;
+    justify-content: start;
+}
+.meses{
+    margin-right: 5vw;
+}
+#asesor,#anho,#mes1{
+    max-height: 4vh;
+    line-height: 1;
+}
+.estatico{
+    max-height: 15vh;
+    position:static;
+    z-index: 100;
+    background-color: #fff;
+}
+.textos-detalle{
+    color: #fff;
+    font-weight: bold;
+}
+.tablaUltimos{
+    height:70vh;
+    overflow-x:hidden; 
+    overflow-y:auto;
+}
+/*carteles detalle diario*/
+.carteles{
+    display: flex;
+    justify-content: center;
+}
+.cartel{
+    width: 20%;
+    height:80px;
+    color: rgba(255, 255, 255, 0.61);
+    display: flex;
+    border-radius: 5px;
+    margin: 0 .5%;
+}
+.cartel-1{
+    max-width: 78%;
+    width: 78%;
+    padding: 0 2%;
+    font-size: 1rem;
+    align-self:center;
+    font-weight: bold;
+}
+.menor{
+    font-size: .9rem;
+}
+.texto-cartel{
+    padding-left:15px;
+    width:100%;
+    height: 50%;
+    max-height: 50%;
+}
+.cartel-2{
+    display: flex;
+    width: 20%;
+    font-size: 2rem;
+    justify-content: center;
+    align-self: center;
+    color: rgba(0, 0, 0, 0.308);
+}
+/*tarjetas detalle diario*/
+.tarjetas{
+    max-height: 60vh;
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x:hidden; 
+    overflow-y:auto;
+}
+.tarjeta{
+    width: 10vw;
+    color: #3F84CD;
+    height:auto;
+    border-radius: 5px;
+    margin:15px auto;
+    font-size: .8rem;
+    border-bottom: 1px solid rgb(110, 110, 110);
+    border-left: 1px solid rgb(110, 110, 110);
+    border-right: 1px solid rgb(110, 110, 110);
+    background-color: #ffffff;      
+}
+.tarjeta-body{
+    width: 100%;
+    max-height: 80%;
+    padding: 5px;
+}
+.titulo-2{
+    background-color:#2E4053;
+    color:#ffffff;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    text-align: center;
+}
+.datos-orden{
+    color: #3F84CD;
+}
+.identificadores{
+    color: #474747c2;
+}
+.menuBTN{
+    display:none;
+}
+.kards{
+    display: none;
+}
+#tegets{
+    max-width: 98vw;
+}
+@media(max-width:991px){
+    .col-2{
+        min-width:56px;
+        max-height: 56px;
+    }
+}
+@media(max-width:920px){
+    #resumen{
+        display: block;
+    }
+    .estatico{
+        position: static;
+    }
+    .estadisticas{
+        position: relative;
+        top:-10vh;
+    }
+}
+@media(max-width:852px){
+    .responder{
+        max-width: 100vw;
+        width: 100vw;
+        display: block !important;
+        overflow: hidden;
+    }
+    .responder .cols-3{
+        display: flex;
+        max-width: 100vw;
+        width:100%;
+        margin: 0;
+    }
+    .responder .cols-3 .row{
+        width: 100%;
+        margin-top: 0;
+        justify-content: center;
+    }
+    .navi{
+        height: auto;
+        display: block;
+    }
+    .encuestaName, .botones{
+        width: 90%;
+        margin: 0 auto;
+    }
+    .cajaNo{
+        width: 60%;
+        font-size: 1em;
+    }
+    .preguntasRes{
+        width: 100% !important;
+    }
+    .preguntasRes-card {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+}
+@media(max-width:720px){
+    .car{
+        display: block !important;
+    }
+    .car .row{
+        margin: 0 !important;
+    }
+    .car .row .cajaNo{
+        width: 90% !important;
+    }
+    .encuesta_header{
+        height: 20%;
+    }
+    .encuesta_header h5{
+        font-size: 1em;
+        line-height: 1;
+    }
+}
+@media(max-width:575px){
+    .estadisticas{
+        position: absolute !important;
+        top:18vh !important;
+        left: 0;
+    }
+    .selectsNav{
+        position: absolute !important;
+        top: 15vh !important;
+    }
+    .encuestaName h5{
+        width: 85%;
+    }
+    .menuBTN{
+        display: block;
+        width: 10%;
+        align-items: center;
+        align-self: center;
+    }
+    .menuBTN1{
+        width: 25%;
+        background-color: #2E4053;
+        border: none;
+        border-radius: 5px;
+    }
+    #carteles{
+        position:absolute;
+        z-index: 5;
+        display:none;
+        width: 100%;
+        height: 90vh;
+        background-color: rgba(255, 255, 255, 0.801);
+    }
+    .cartel{
+        width:50%;
+        margin: 1% auto;
+        margin-top:2px;
+    }
+    .menuBTN button{
+        width: 100%;
+        height: 100%;
+        border: none;
+        background-color:transparent;
+        color: #fff;
+    }
+    .botones{
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        left: 0;
+        display:none;
+        z-index: 100;
+        background-color: #2e4053ea;
+    }
+    .botones .btn{
+        width: 100%;
+        color: #fff;
+    }
+    #tegets{
+        position:relative;
+        top: -5vh;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    #tegets .col{
+        width: 48%;
+        height: 9vh;
+    }
+    #tegets .col a{
+        display: none;
+    }
+    #tegets .col .inner{
+        display:flex;
+        justify-content: space-between;
+    }
+    .tablaUltimos{
+        max-width:100vw !important;
+        height: 80vh;
+        position: relative;
+        top: -4vh;
+        left: 0;
+    }
+    .emoji{
+        display: flex;
+        justify-content: center;
+    }
+    .emoji img{
+        width: 70% !important;
+    }
+    .emoji p{
+        position: absolute;
+        text-align: left !important;
+    }
+
+}
+@media(max-width:492px){
+    .selectsNav p{
+        width: 75%;
+    }
+    #datepicker{
+        width: 50%;
+    }
+}
+@media(max-width:467px){
+    .tablaultimos{
+        margin-bottom: 15px;
+    }
+    #example{
+        display: none;
+    }
+    .kards{
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+    .kard{
+        width: 40%;
+        margin: 5px auto;
+        border-radius: 5px;
+        border:1px solid #a0a0a0;
+    }
+    .kard-header{
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+        display: flex;
+        justify-content: center;
+    }
+    .kard-body{
+        padding: 10px;
+        font-weight: normal;
+    }
+    .kard-footer{
+        width: 80%;
+        margin: 5px auto;
+        display: flex;
+        justify-content: end;
+        padding-top: 5px;
+        border-top: 1px solid #a0a0a0;
+    }
+    .emoji{
+        height: auto;
+        justify-content: center;
+    }
+    .emoji p{
+        width: 100%;
+        margin: 0;
+        margin: 20px auto !important;
+    }
+}
+@media(max-width:420px){
+    #rango{
+        display: block !important;
+    }
+    #rango .col{
+        display: flex;
+        justify-content: safe;
+        margin: 0 !important;
+        margin: 5px auto !important;
+    }
+    .cajaNo{
+        width: 80%;
+    }
+    .modal-title{
+        font-size: .8em;
+        margin-right: 2%;
+    }
+    #example{
+        display: none;
+    }
+    .kards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .kard{
+        width: 45%;
+        height: auto;
+        margin: 2% auto;
+        border-radius: 5px;
+        border:1px solid rgba(80, 80, 80, 0.561);
+    }
+    .kard-header{
+    text-align: center;
+    }
+    .kard-body label{
+        width: 100%;
+    }
+    .kard-body label span{
+        width: 50%;
+        margin: 0 20%;
+        font-weight: normal;
+    }
+    .kard-footer{
+        width: 90%;
+        margin:0 auto;
+        display: flex;
+        justify-content: end;
+        border: none;
+        border-top: 1px solid rgba(80, 80, 80, 0.561);
+    }
+    .kard-footer a{
+        margin-top: 5%;
+        margin-bottom: 5%;
+        height: 30px;
+    }
+    .respuestas{
+        display: block;
+        padding: 0;
+    }
+    .target-resp{
+        margin: 0 auto;
+        width: 100vw;
+    }
+
+}
+@media(max-width:347px){
+    .encuestaName h5{
+        font-size:1em;
+    }
+    .kard{
+        font-size: .8em;
+    }
+}

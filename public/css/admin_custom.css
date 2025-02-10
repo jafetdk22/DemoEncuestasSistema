@@ -1,0 +1,119 @@
+html {
+    font-size: 100%; /* 100% = 16px */
+  }
+img{
+    width:100%;
+    border-radius: 10%;
+}
+.imagen{
+    width: 15vw;
+    height: 25vh;
+    border-radius: 10%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    position: fixed;
+    box-shadow: 0 0 1px #585858,
+                0 0 2px #585858,
+                0 0 4px #585858,
+                0 0 8px #585858,
+                0 0 16px #585858; 
+    background-color: yellowgreen;
+}
+.image1{
+    left: 50px;
+    top: 100px;
+}
+.image2{
+    top:400px;
+    left: 500px;
+}
+.image3{
+    top:400px;
+    right: 500px;
+}
+.image4{
+    top:100px;
+    right: 50px;
+}
+
+ul{
+    list-style: none;
+}
+.danger{
+    background-color:#FFD2D2;
+    font-weight:bold;
+}
+.success{
+    background-color:#BCFEE3;
+    font-weight:bold;
+}
+th{
+    text-align: center;
+}
+td{
+    text-align: center;
+    padding:5px 10px !important;
+}
+.remover-respuesta{
+    margin:0 !important;
+}
+.cards{
+    display: none;
+}
+@media(max-width:970px){
+    #contenidos{
+        display:block;
+    }
+    #nuevaResPuesta{
+        width: 100vw !important;
+    }
+}
+@media(max-width:767px){
+    .container{
+        width: 100% !important;
+        margin: 0;
+        max-width: 100%;
+    }
+
+}
+@media(max-width:655px){
+    .container{
+        width: 100% !important;
+        margin: 0;
+        max-width: 100%;
+    }
+    #menus{
+        display: block;
+    }
+    #misPreg,#misEnc{
+        margin:5px 0 !important;
+    }
+    #example,#example2,#example3,#example_wrapper,#example2_wrapper,#example3_wrapper{
+        display: none;    
+    }
+    .cards{
+        display: block;
+    }
+    .card-header,.card-body{
+        font-size:.8rem;
+    }
+    .card-footer{
+        width: 90%;
+        margin: 0 auto;
+        background-color: transparent;
+        border-top: 1px solid #8a8a8a;
+        display: flex;
+        justify-content: end;
+    }
+    #Asignar{
+        display: block;
+    }
+    .emoji-table{
+        display: none;
+    }
+    .dataTables_info{
+        display: none;
+    }
+
+}
